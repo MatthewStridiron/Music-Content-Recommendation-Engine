@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<!-- Image References:
+https://media.istockphoto.com/vectors/music-background-vector-id1076840920?k=20&m=1076840920&s=170667a&w=0&h=g5DAo0AIf5c_0C8UxmfzG3p_0v6HSwc6ZtXoiZfE6CI=
+ https://itg.wfu.edu/blog/why-and-how-privacy-modes-in-browsers/
+    https://www.youtube.com/watch?v=OWNxUVnY3pg
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Music Search Tool</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(static/images/note.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+            color:#fff;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .heading {
+            text-align:center;
+            width:100%;
+            margin:auto;
+            margin-top:100px;
+        }
+
+        #head {
+            font-size:1.8em;
+        }
+
+        #subheading {
+            font-size:18px;
+            margin-top:10px;
+        }
+
+        #content1 {
+            width:90%;
+            margin:auto;
+        }
+
+        form {
+            background-color:rgba(0,0,0,0.7);
+            padding-top:34px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:54%;
+            border-radius:5px;
+            margin:auto;
+            margin-top:10px;
+            padding-bottom:60px;
+        }
+
+        form .box { /*these are the text boxes to insert information*/
+            width:98.5%;
+            height:2.8em;
+            position:relative;
+            bottom:10px;
+            border:0;
+            border-radius:5px;
+        }
+
+        #option1 select {
+            width:98.5%;
+            height:2.7em;
+            position:relative;
+            bottom:10px;
+            border-radius:5px;
+            border:0;
+        }
+
+        button {
+            width:98.5%;
+            height:3em;
+            position:relative;
+            top:11px;
+            background-color:rgb(18,219,78);
+            border:none;
+            color:rgb(255,255,255);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="heading">
+        <h1 id="head">Music Search Tool</h1>
+        <h2 id="subheading"> Thank you for taking the time to try out this service!</h2>
+    </div>
+
+    <form method="post">
+        <div id="content1">
+
+            <label>Short or long songs?</label><br><br>
+            <div id="option1">
+                <select name="select_duration">
+                    <option></option>
+                    <option value="very_short">Very Short (0:45-2:00) </option>
+                    <option value="short">Short (2:00-3:00)</option>
+                    <option value="idk">Doesn't Matter</option>
+                    <option value="long">Long (4:00-6:00)</option>
+                    <option value="very_long">Very Long (6:00-8:00)</option>
+                </select>
+         
+
+            <br />
+
+            <label>Slow or fast songs?</label><br><br>
+                <select name="select_tempo">
+                    <option></option>
+                    <option value="very_slow">Very slow-paced </option>
+                    <option value="slow">Slow paced</option>
+                    <option value="idk">Doesn't Matter</option>
+                    <option value="fast">Fast-paced</option>
+                    <option value="very_fast">Very Fast-Paced</option>
+                </select>
+         
+
+            <br />
+
+           <label>Instrumental or vocals?</label><br><br>
+                <select name="select_music_composition">
+                    <option></option>
+                    <option value="pure_vocals">Mostly vocals</option>
+                    <option value="idk">A mix of the two</option>
+                    <option value="pure_instrumental">Mostly instrumental</option>
+                </select>
+
+
+            <br />
+            <label>Electric or acoustic instruments?</label><br><br>
+                <select name="select_instruments">
+                    <option></option>
+                    <option value="pure_electrical">Mostly electrical</option>
+                    <option value="idk">Doesn't Matter</option>
+                    <option value="pure_acoustic">Mostly acoustic</option>
+                </select>
+
+            <label>Lively or mellow?</label><br><br>
+                <select name="select_music_energy">
+                    <option></option>
+                    <option value="mellow">Mellow</option>
+                    <option value="slightly_mellow">Slightly Mellow</option>
+                    <option value="idk">Doesn't matter</option>
+                    <option value="somewhat_lively">Somewhat Lively</option>
+                    <option value="lively">Lively</option>
+                </select>
+         
+
+            <br />
+
+            <label>Cheerful or somber?</label><br><br>
+                <select name="select_mood">
+                    <option></option>
+                    <option value="somber">Somber</option>
+                    <option value="idk">Doesn't Matter</option>
+                    <option value="uplifting">Uplifting</option>
+                </select>
+       
+
+            <br />  
+
+            <button><h3>Submit</h3></button>
+
+        </div>
+            </div>
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<!-- Image References:
+https://media.istockphoto.com/vectors/music-background-vector-id1076840920?k=20&m=1076840920&s=170667a&w=0&h=g5DAo0AIf5c_0C8UxmfzG3p_0v6HSwc6ZtXoiZfE6CI=
+ https://itg.wfu.edu/blog/why-and-how-privacy-modes-in-browsers/
+    https://www.youtube.com/watch?v=OWNxUVnY3pg
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>User Session</title>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(static/images/note.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+            color: #fff;
+            text-align:center;
+        }
+
+        .loginbox {
+            background-color: rgba(0,0,0,0.7);
+            padding-top: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54%;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            padding-bottom: 60px;
+        }
+
+        #content1 {
+            width: 90%;
+            margin: auto;
+        }
+
+        .loginbox a {
+            background-color: #f8f7f9;
+            margin-top: 100px;
+            border-radius: 8%;
+            padding: 7px 7px;
+            margin: auto;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        }
+
+         .loginbox a:hover {
+            cursor: pointer;
+             color: #00f;
+         }
+
+        .logoutbox {
+            border-radius: 15%;
+            background-color: #f8f7f9;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding-right: 3px;
+            padding-top: 3px;
+        }
+
+        .logoutbox a:hover {
+            cursor: pointer;
+            color: #00f;
+                
+        }
+
+        .logoutbox a {
+            text-decoration: none;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="loginbox">
+
+        <div id="content1">
+            {% block content %}
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for msg in messages %}
+            <h3> {{msg}}</h3>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+            {% endblock %}
+
+            <a href="{{ url_for('survey') }}">Click Here To Get New Music Recommendations</a>
+
+            <br />
+
+            <h3> Or, you can search a song directly </h3>
+
+            <a href="{{ url_for('search_song') }}">Click Here To Search For A Song</a>
+
+        </div>
+
+     </div>
+
+     <div class="logoutbox">
+        <a href="{{ url_for('logout') }}">Log Out</a>
+     </div>
+
+</body>
+</html>

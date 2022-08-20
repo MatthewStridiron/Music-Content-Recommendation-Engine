@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<!-- Image References:
+https://media.istockphoto.com/vectors/music-background-vector-id1076840920?k=20&m=1076840920&s=170667a&w=0&h=g5DAo0AIf5c_0C8UxmfzG3p_0v6HSwc6ZtXoiZfE6CI=
+ https://itg.wfu.edu/blog/why-and-how-privacy-modes-in-browsers/
+    https://www.youtube.com/watch?v=OWNxUVnY3pg
+-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Search For Song</title>
+
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(static/images/note.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            text-align: center;
+            width: 100%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #head {
+            font-size: 1.8em;
+        }
+
+        #content1 {
+            width: 90%;
+            margin: auto;
+        }
+
+        form {
+            background-color: rgba(0,0,0,0.7);
+            padding-top: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54%;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            padding-bottom: 60px;
+        }
+
+            form .box { /*these are the text boxes to insert information*/
+                width: 98.5%;
+                height: 2.8em;
+                position: relative;
+                bottom: 10px;
+                border: 0;
+                border-radius: 5px;
+            }
+
+        #option1 select {
+            width: 98.5%;
+            height: 2.7em;
+            position: relative;
+            bottom: 10px;
+            border-radius: 5px;
+            border: 0;
+        }
+
+        button {
+            width: 98.5%;
+            height: 3em;
+            position: relative;
+            top: 11px;
+            background-color: rgb(18,219,78);
+            border: none;
+            color: rgb(255,255,255);
+        }
+
+        input {
+            width: 98.5%;
+            height:3em;
+            position: relative;
+            top: 5px;
+            border: none;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <form method="post">
+        <div id="content1">
+
+            <h3 style="text-align:center;"> Before using this feature, we recommend that you fill out the survey on the previous page. This will allow you to get an idea of what types of songs we provide.</h3>
+            <br /><br />
+            <h3 style="text-align:center;"> You can also use this feature to search for any of your favorite songs that we previously recommended.</h3>
+            <br /><br />
+
+            <div id="option1">
+                <label for="song_name"><h3>Type in the song's name (spelling and whitespace matter, though not case sensitive)</h3></label><br><br>
+                <input type="text" id="song" name="sname"><br /><br />
+
+                <button><h3>Submit</h3></button>
+
+            </div>
+        </div>
+
+    </form>
+
+
+</body>
+</html>
