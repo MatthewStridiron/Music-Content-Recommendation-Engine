@@ -1,7 +1,7 @@
 # Music Content Recommendation Engine
 added two features. one allows you to search for a song directly. the other feature filters songs based on your previous and current music preferences.
 
-MUST SEE YOUTUBE TUTORIAL: https://www.youtube.com/watch?v=n3jxHhA7N_4&ab_channel=MatthewStridiron
+YOUTUBE TUTORIAL: https://www.youtube.com/watch?v=n3jxHhA7N_4&ab_channel=MatthewStridiron
 
 REPORT FOR PROJECT can be found at https://www.overleaf.com/read/nrzhnhgbybdw
 
