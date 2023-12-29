@@ -9,6 +9,10 @@ made by Matthew Stridiron
 
 **About the files**
 
+**templates/** - website html code
+
+**static/** - website images and css code
+
 **SpotifyFeatures.zip** - the dataset
 
 **Analysis.ipynb** - preliminary analysis on the dataset before I began work
